@@ -1,0 +1,23 @@
+{
+  "name": "car-market",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "update-readme": "node scripts/update-readme.js",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "npm@9.0.0"
+}
